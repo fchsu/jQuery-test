@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*自訂css reset*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*自訂css開始*/
+.wrap{
+	width: 1002px;
+	margin: 0 auto;
+}
+.topbar{
+	height: 30px;
+	background-color: #f6f6f6;
+}
+.topbar ul{
+	float: right;
+	margin-right: 10px;
+}
+.topbar ul li{
+	float: left;
+	margin: 7px 0;
+	padding: 0 10px;
+}
+.facebook_icon{
+	border-right: 1px solid #cccccc;
+}
+.topbar li img{
+	float: left;
+	margin-right: 5px;
+}
+.facebook_icon span{
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	color: #566da7;
+}
+.twitter_icon span{
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	color: #25b0ed;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+h1{
+	float: left;
+}
+h1 a{
+	display: block;
+	width: 170px;
+	height: 36px;
+	background-image: url(../images/logo.png);
+	margin: 7px 20px; 
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.logo-menu > ul{
+	float: right;
+}
+.logo-menu > ul > li{
+	float: left;
+	padding: 0 40px;
+	margin: 0 10px;
+	text-align: center;
+	position: relative;
+}
+.logo-menu li a{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	color: #00cc99;
+	padding: 17px 0 13px 0;
+	border-bottom: 4px solid #ffffff;
+	transition: border-bottom .5s;
+}
+.logo-menu li a:hover, .logo-menu li a.active{
+	border-bottom: 4px solid #00cc99;
+}
+.menu-dropdowns-open{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background: #ffffff;
+	opacity: 0.85;
+	z-index: 99;
+}
+.menu-dropdowns-open a{
+	margin: 0 5%;
+}
+.title{
+	position: relative;
+}
+.tech{
+	margin: 0 6px;
+	margin-bottom: 65px;
+}
+.tech_item a{
+	float: left;
+	width: 302px;
+	height: 330px;
+	border-right: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 3px 6px #dbdbdb;
+	margin: 0 14px;
+	padding: 24px 20px;
+}
+.tech_item div{
+	position: relative;
+	width: 221px;
+	height: 136px;
+	margin: 0 auto 13px auto;
+}
+.tech_item div img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.tech_item h3{
+	text-align: center;
+	font-size: 18px;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 5px;
+}
+.tech_item p{
+  text-align: justify;
+	font-size: 15px;
+	font-family: 微軟正黑體;
+	color: #000;
+	line-height: 1.5;
+}
+.tech_item ul{
+	font-size: 15px;
+	font-family: 微軟正黑體;
+	color: #000;
+	line-height: 1.5;
+}
+.tech_item a:hover{
+	background-color: #f1f1f1;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	box-shadow: 0 3px 6px #a6937c;
+}
+.table_compare{
+	width: 840px;
+	margin: 0 auto 65px auto;
+}
+.table_compare caption{
+	font-size: 24px;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+th, td{
+	font-size: 15px;
+	font-family: 微軟正黑體;
+	padding: 10px 20px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	text-align: left;
+}
+th{
+	font-weight: bold;
+	background-color: #f7f7f7;
+}
+.table_color{
+	color: #00a67d;
+ }
+.form{
+	background: linear-gradient(#00644b, #009872);
+	padding: 30px 20px; 
+	margin-bottom: 26px;
+}
+.form_title{
+	margin-bottom: 20px;
+}
+.form p{
+	color: #fff;
+	font-size: 24px; 
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	text-align: center;
+	line-height: 1.5;
+}
+.form textarea{
+	float: left;
+	width: 460px;
+	height: 245px;
+	border-radius: 3px;
+	border: none;
+	font-size: 16px;
+}
+.form_contact{
+	float: right;
+}
+.form_contact label{
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	margin-bottom: 6px;
+}
+.form_contact input[type*="text"]{
+	display: block;
+	width: 460px;
+	height: 32px;
+	margin-bottom: 17px;
+	border-radius: 3px;
+	padding-left: 10px;
+	border: 1px solid #fff;
+	font-size: 16px;
+	font-family: 微軟正黑體;
+}
+#submit{
+	display: block;
+	float: right;
+	width: 70px;
+	height: 32px;
+	color: #ffffff;
+	background-color: #00cc99;
+	border: 2px solid #00cc99;
+	margin-top: 4px;
+}
+#submit:hover{
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #01b286;
+	border: 2px solid #01b286;
+}
+.footer img{
+	float: left;
+	margin-left: 20px;
+}
+.contact{
+	float: right;
+	font-size: 15px;
+	font-family: 微軟正黑體;
+	margin-right: 20px;
+}
+.contact a{
+	color: #e55995;
+	font-weight: bold;
+}
+.contact a:hover{
+	color: #ff145e;
+}
+.contact span{
+	color: #e55995;
+	font-weight: bold;
+}
+.contact_tel{
+	line-height: 2;
+}
+.scroll-top{
+	position: fixed;
+	right: 0;
+	bottom: 0;	
+}
+.scroll-top img{
+	width: 60px;
+}
+.qrcode{
+ text-align: center;
+ margin-bottom: 10px;
+}
